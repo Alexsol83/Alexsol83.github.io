@@ -1,110 +1,127 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Alexsol83 — IT infrastructure, automation, HomeLab and practical projects.">
-  <title>Alexsol83 — IT • Automation • HomeLab</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Alexey Kovrov — IT Infrastructure & Automation. Windows, networking, OpenWrt, HomeLab and practical automation projects.">
+<title>Alexey Kovrov — IT Infrastructure & Automation</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="bg-grid" aria-hidden="true"></div>
-  <header class="header">
-    <a class="brand" href="#top"><span class="brand-mark">A</span><span>Alexsol83</span></a>
-    <nav class="nav">
-      <a href="#about">Обо мне</a><a href="#projects">Проекты</a><a href="#stack">Стек</a><a href="#contact">Контакты</a>
-    </nav>
-    <a class="github-link" href="https://github.com/Alexsol83" target="_blank" rel="noopener">GitHub ↗</a>
-  </header>
+<div class="bg-grid" aria-hidden="true"></div>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="dot"></span> PERSONAL TECH LAB</div>
-        <h1>IT.<br><span>Automation.</span><br>HomeLab.</h1>
-        <p class="hero-text">Практичные проекты вокруг Windows, сетей, OpenWrt, автоматизации и домашней инфраструктуры.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#projects">Смотреть проекты</a>
-          <a class="btn secondary" href="https://github.com/Alexsol83" target="_blank" rel="noopener">Открыть GitHub</a>
-        </div>
-      </div>
-      <div class="terminal-card reveal">
-        <div class="terminal-top"><span></span><span></span><span></span><small>alexsol83@homelab:~</small></div>
-        <div class="terminal-body">
-          <p><b>$</b> whoami</p><p class="muted">alexsol83</p>
-          <p><b>$</b> cat focus.txt</p><p class="accent">automation · networking · homelab</p>
-          <p><b>$</b> systemctl status projects</p><p class="ok">● active — always building</p><p class="cursor">_</p>
-        </div>
-      </div>
-    </section>
+<header class="header">
+  <a class="brand" href="#top"><span class="brand-mark">A</span><span>Alexey Kovrov</span></a>
+  <nav class="nav">
+    <a href="#profile">Профиль</a><a href="#projects">Проекты</a><a href="#stack">Стек</a><a href="#contact">Контакты</a>
+  </nav>
+  <a class="github-link" href="https://github.com/Alexsol83" target="_blank" rel="noopener">GitHub ↗</a>
+</header>
 
-    <section class="stats reveal">
-      <div><strong>01</strong><span>Windows<br>Automation</span></div>
-      <div><strong>02</strong><span>OpenWrt<br>& Networking</span></div>
-      <div><strong>03</strong><span>HomeLab<br>& Media</span></div>
-      <div><strong>04</strong><span>Scripts<br>& Tools</span></div>
-    </section>
+<main id="top">
+<section class="hero">
+  <div class="hero-copy reveal">
+    <div class="eyebrow"><span class="dot"></span> IT INFRASTRUCTURE & AUTOMATION</div>
+    <h1>Alexey<br><span>Kovrov.</span></h1>
+    <p class="role">IT Infrastructure & Automation</p>
+    <p class="hero-text">Проектирую и автоматизирую практичные IT-решения: Windows, сети, OpenWrt, домашняя инфраструктура, мониторинг и рабочие процессы.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#projects">Смотреть проекты</a>
+      <a class="btn secondary" href="https://github.com/Alexsol83" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+  <div class="profile-card reveal">
+    <div class="profile-top"><span class="status"></span><span>AVAILABLE FOR BUILDING</span></div>
+    <div class="profile-initial">AK</div>
+    <div class="profile-meta"><span>IT Infrastructure</span><span>Automation</span><span>HomeLab</span></div>
+    <div class="profile-line"></div>
+    <div class="profile-terminal"><span>$</span> focus --today</div>
+    <div class="profile-value">systems that work<br>without routine</div>
+  </div>
+</section>
 
-    <section id="about" class="section reveal">
-      <div class="section-label">01 / ABOUT</div>
-      <div class="section-content">
-        <h2>Собираю вещи,<br>которые <em>работают.</em></h2>
-        <p>Мне интересны практичные технологии: автоматизация рутинных действий, домашние серверы, сети, Windows-инструменты и всё, что делает систему удобнее и надёжнее.</p>
-        <p>Здесь собраны проекты, которые я действительно настраивал, тестировал и доводил до рабочего состояния.</p>
-      </div>
-    </section>
+<section class="stats reveal">
+  <div><strong>01</strong><span>Infrastructure<br>IT service</span></div>
+  <div><strong>02</strong><span>Windows<br>Automation</span></div>
+  <div><strong>03</strong><span>Networking<br>& OpenWrt</span></div>
+  <div><strong>04</strong><span>HomeLab<br>& Media</span></div>
+</section>
 
-    <section id="projects" class="section reveal">
-      <div class="section-label">02 / PROJECTS</div>
-      <div class="project-grid">
-        <a class="project" href="projects/steam-big-picture.html">
-          <div class="project-number">01</div><div class="project-icon">◈</div>
-          <h3>Steam Big Picture Automation</h3>
-          <p>Автоматическое переключение мониторов и аудио при входе и выходе из Big Picture.</p>
-          <div class="tags"><span>PowerShell</span><span>Windows</span><span>MultiMonitorTool</span></div>
-          <span class="project-more">Открыть проект →</span>
-        </a>
-        <a class="project" href="projects/openwrt-home-media.html">
-          <div class="project-number">02</div><div class="project-icon">⌁</div>
-          <h3>OpenWrt Home Media</h3>
-          <p>Netis NX32U, HDD, Transmission и DLNA в роли домашнего медиасервера.</p>
-          <div class="tags"><span>OpenWrt</span><span>Linux</span><span>DLNA</span></div>
-          <span class="project-more">Открыть проект →</span>
-        </a>
-        <a class="project" href="projects/windows-automation.html">
-          <div class="project-number">03</div><div class="project-icon">▣</div>
-          <h3>Windows Automation</h3>
-          <p>PowerShell и VBS для устройств, запуска программ, мониторов и звука.</p>
-          <div class="tags"><span>PowerShell</span><span>VBS</span><span>Registry</span></div>
-          <span class="project-more">Открыть проект →</span>
-        </a>
-        <a class="project" href="projects/pyrus-sla-dashboard.html">
-          <div class="project-number">04</div><div class="project-icon">▤</div>
-          <h3>Pyrus / SLA Dashboard</h3>
-          <p>Проработка процессов, SLA, метрик и дашборда для ИТ-сервиса.</p>
-          <div class="tags"><span>Pyrus</span><span>SLA</span><span>Dashboard</span></div>
-          <span class="project-more">Открыть проект →</span>
-        </a>
-      </div>
-    </section>
+<section id="profile" class="section reveal">
+  <div class="section-label">01 / PROFILE</div>
+  <div class="section-content">
+    <h2>Технологии должны<br>снимать <em>рутину.</em></h2>
+    <p>Я занимаюсь практическими IT-задачами: инфраструктурой, автоматизацией, сетями и рабочими процессами. Люблю решения, которые можно понять, повторить, документировать и поддерживать.</p>
+    <p>В этом портфолио — реальные технические эксперименты и рабочие сценарии: от автоматизации Windows и игровой станции до домашнего сервера на OpenWrt и проектирования IT-метрик.</p>
+    <div class="profile-points">
+      <div><b>Infrastructure</b><span>оборудование, рабочие места, сети и сервисы</span></div>
+      <div><b>Automation</b><span>PowerShell, VBS и автоматизация повторяющихся действий</span></div>
+      <div><b>Operations</b><span>процессы, SLA, контроль задач и понятные метрики</span></div>
+    </div>
+  </div>
+</section>
 
-    <section id="stack" class="section reveal">
-      <div class="section-label">03 / TOOLBOX</div>
-      <div class="toolbox">
-        <div><b>Windows</b><span>PowerShell · VBS · Registry · MultiMonitorTool · SoundVolumeView</span></div>
-        <div><b>Networking</b><span>OpenWrt · TCP/IP · Wi‑Fi · VPN</span></div>
-        <div><b>HomeLab</b><span>Storage · DLNA · Transmission · Media</span></div>
-        <div><b>Web</b><span>HTML · CSS · JavaScript · GitHub Pages</span></div>
-      </div>
-    </section>
+<section id="projects" class="section reveal">
+  <div class="section-label">02 / SELECTED PROJECTS</div>
+  <div class="project-grid">
+    <a class="project featured" href="projects/steam-big-picture.html">
+      <div class="project-number">01 / FEATURED</div><div class="project-icon">◈</div>
+      <h3>Steam Big Picture Automation</h3>
+      <p>Автоматизация игровой станции: мониторы, TV, аудиоустройства и возврат исходного состояния Windows.</p>
+      <div class="tags"><span>PowerShell</span><span>MultiMonitorTool</span><span>SoundVolumeView</span></div>
+      <span class="project-more">Case study →</span>
+    </a>
+    <a class="project" href="projects/openwrt-home-media.html">
+      <div class="project-number">02</div><div class="project-icon">⌁</div>
+      <h3>OpenWrt Home Media</h3>
+      <p>Netis NX32U превращён в компактный домашний узел с HDD, Transmission и DLNA.</p>
+      <div class="tags"><span>OpenWrt</span><span>Linux</span><span>DLNA</span></div>
+      <span class="project-more">Case study →</span>
+    </a>
+    <a class="project" href="projects/windows-automation.html">
+      <div class="project-number">03</div><div class="project-icon">▣</div>
+      <h3>Windows Automation</h3>
+      <p>PowerShell/VBS-инструменты для автоматического управления устройствами и сценариями Windows.</p>
+      <div class="tags"><span>PowerShell</span><span>VBS</span><span>Windows</span></div>
+      <span class="project-more">Case study →</span>
+    </a>
+    <a class="project" href="projects/pyrus-sla-dashboard.html">
+      <div class="project-number">04</div><div class="project-icon">▤</div>
+      <h3>Pyrus / SLA Dashboard</h3>
+      <p>Проработка IT-процесса, SLA, объёма задач, просрочек и единого набора метрик.</p>
+      <div class="tags"><span>Pyrus</span><span>SLA</span><span>Dashboard</span></div>
+      <span class="project-more">Case study →</span>
+    </a>
+  </div>
+</section>
 
-    <section id="contact" class="contact reveal">
-      <div><div class="section-label">04 / CONTACT</div><h2>Есть идея?<br><em>Давай соберём.</em></h2></div>
-      <a class="btn primary large" href="https://github.com/Alexsol83" target="_blank" rel="noopener">GitHub profile ↗</a>
-    </section>
-  </main>
+<section id="stack" class="section reveal">
+  <div class="section-label">03 / TOOLBOX</div>
+  <div class="toolbox">
+    <div><b>Windows</b><span>PowerShell · VBS · Registry · MultiMonitorTool · SoundVolumeView</span></div>
+    <div><b>Networking</b><span>OpenWrt · TCP/IP · Wi‑Fi · VPN · домашняя инфраструктура</span></div>
+    <div><b>HomeLab</b><span>Storage · NTFS · DLNA · Transmission · Media Server</span></div>
+    <div><b>Process & Web</b><span>Pyrus · SLA · Dashboards · HTML · CSS · JavaScript · GitHub Pages</span></div>
+  </div>
+</section>
 
-  <footer class="footer"><span>© <span id="year"></span> Alexsol83</span><span>Built with HTML · CSS · JS</span></footer>
-  <script src="script.js"></script>
+<section class="section timeline-section reveal">
+  <div class="section-label">04 / APPROACH</div>
+  <div class="timeline">
+    <div><span>01</span><div><b>Understand</b><p>Разобраться в задаче и ограничениях.</p></div></div>
+    <div><span>02</span><div><b>Build</b><p>Собрать решение из понятных компонентов.</p></div></div>
+    <div><span>03</span><div><b>Automate</b><p>Убрать повторяющиеся ручные действия.</p></div></div>
+    <div><span>04</span><div><b>Document</b><p>Оставить инструкцию, чтобы решение можно было повторить.</p></div></div>
+  </div>
+</section>
+
+<section id="contact" class="contact reveal">
+  <div><div class="section-label">05 / CONTACT</div><h2>Build something<br><em>useful.</em></h2><p>Исходный код и новые проекты будут появляться здесь.</p></div>
+  <a class="btn primary large" href="https://github.com/Alexsol83" target="_blank" rel="noopener">Open GitHub ↗</a>
+</section>
+</main>
+
+<footer class="footer"><span>© <span id="year"></span> Alexey Kovrov</span><span>IT Infrastructure & Automation</span></footer>
+<script src="script.js"></script>
 </body>
 </html>

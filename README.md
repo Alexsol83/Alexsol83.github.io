@@ -1,3 +1,9 @@
-# Alexsol83.github.io
+# Alexsol83.github.io — Professional Portfolio
 
-Personal GitHub Pages website, version 2.
+Professional personal portfolio for Alexey Kovrov — IT Infrastructure & Automation.
+
+## Structure
+- `index.html` — portfolio home page
+- `projects/` — project case studies
+- `style.css` — design
+- `script.js` — reveal animations and current year

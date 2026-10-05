@@ -1,1 +1,23 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Steam Big Picture Automation — Alexsol83</title><link rel="stylesheet" href="../style.css"></head><body><div class="bg-grid"></div><header class="header"><a class="brand" href="../"><span class="brand-mark">A</span><span>Alexsol83</span></a><a class="github-link" href="https://github.com/Alexsol83" target="_blank">GitHub ↗</a></header><main><article class="project-page reveal visible"><a class="back" href="../#projects">← Назад к проектам</a><div class="section-label">01 / PROJECT</div><h1>Steam Big Picture Automation</h1><p class="lead">Автоматизация игрового режима: при запуске Steam Big Picture рабочие мониторы отключаются, Toshiba TV остаётся активным, а звук переключается на телевизор. После выхода всё возвращается обратно.</p><div class="detail-grid"><div class="detail"><b>Запуск</b><span>штатная кнопка PS на геймпаде</span></div><div class="detail"><b>Мониторы</b><span>MultiMonitorTool — дисплеи 1 и 2</span></div><div class="detail"><b>Аудио</b><span>SoundVolumeView</span></div><div class="detail"><b>Сценарий</b><span>PowerShell + VBS</span></div></div><h2>Как работает</h2><ul><li>Скрипт определяет состояние Steam Big Picture.</li><li>При входе выключает мониторы 1 и 2.</li><li>Toshiba TV остаётся единственным активным экраном.</li><li>Аудио переключается на NVIDIA High Definition Audio (TOSHIBA-TV).</li><li>После выхода состояние мониторов и аудио восстанавливается.</li></ul><h2>Результат</h2><p class='lead'>Вся последовательность запускается автоматически — без отдельного ярлыка для Big Picture. Проект рассчитан на сценарий с тремя мониторами и игровым ТВ.</p></article></main><footer class="footer"><span>© <span id="year"></span> Alexsol83</span><span>GitHub Pages</span></footer><script src="../script.js"></script></body></html>
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Steam Big Picture Automation — project by Alexey Kovrov"><title>Steam Big Picture Automation — Alexey Kovrov</title><link rel="stylesheet" href="../style.css"></head><body><div class="bg-grid"></div><header class="header"><a class="brand" href="../"><span class="brand-mark">A</span><span>Alexey Kovrov</span></a><a class="github-link" href="https://github.com/Alexsol83" target="_blank">GitHub ↗</a></header><main><article class="project-page reveal visible"><a class="back" href="../#projects">← Все проекты</a><div class="section-label">01 / CASE STUDY</div><h1>Steam Big Picture Automation</h1><p class="lead">Автоматизация игровой станции с тремя дисплеями: Steam Big Picture, Toshiba TV, управление мониторами и переключение аудио.</p><div class="detail-grid"><div class="detail"><b>Platform</b><span>Windows</span></div><div class="detail"><b>Automation</b><span>PowerShell + VBS</span></div><div class="detail"><b>Displays</b><span>MultiMonitorTool</span></div><div class="detail"><b>Audio</b><span>SoundVolumeView</span></div></div>
+<h2>Задача</h2>
+<p class="lead">Сделать запуск Steam Big Picture удобным для телевизора: не выключать ПК вручную, не переключать дисплеи и не менять устройство вывода звука каждый раз.</p>
+<h2>Архитектура</h2>
+<div class="architecture">
+<div class="arch-node"><b>Геймпад</b> → запуск Steam Big Picture</div><div class="arrow">↓</div>
+<div class="arch-node"><b>PowerShell</b> → определяет состояние Big Picture</div><div class="arrow">↓</div>
+<div class="arch-node"><b>MultiMonitorTool</b> → отключает мониторы 1 и 2</div><div class="arrow">↓</div>
+<div class="arch-node"><b>SoundVolumeView</b> → выбирает TOSHIBA-TV</div><div class="arrow">↓</div>
+<div class="arch-node"><b>TV</b> → единственный активный игровой экран</div>
+</div>
+<h2>Сценарий работы</h2>
+<ul><li>При входе в Big Picture включается игровой профиль.</li><li>Мониторы 1 и 2 отключаются, телевизор остаётся активным.</li><li>Звук переключается на NVIDIA High Definition Audio (TOSHIBA-TV).</li><li>После выхода состояние мониторов и исходное аудиоустройство восстанавливаются.</li><li>Автозапуск сценария выполняется через Windows.</li></ul>
+<h2>Результат</h2>
+<p class="lead">Игровой режим превращён в один бесшовный сценарий: нажал кнопку на геймпаде — система сама подготовила экран и звук, вышел — всё вернулось обратно.</p>
+<h2>Компоненты</h2>
+<div class="codebox">SteamBigPicture.ps1
+SteamBigPicture.vbs
+MultiMonitorTool.exe
+SoundVolumeView.exe
+
+PowerShell + Windows Registry / Startup</div>
+</article></main><footer class="footer"><span>© <span id="year"></span> Alexey Kovrov</span><span>IT Infrastructure & Automation</span></footer><script src="../script.js"></script></body></html>
