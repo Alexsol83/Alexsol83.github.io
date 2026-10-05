@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alexsol83 — IT, automation, HomeLab, OpenWrt and personal projects.">
+  <title>Alexsol83 — IT • Automation • HomeLab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="header">
+    <a class="brand" href="#top" aria-label="Alexsol83">
+      <span class="brand-mark">A</span>
+      <span>Alexsol83</span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#about">Обо мне</a>
+      <a href="#projects">Проекты</a>
+      <a href="#stack">Стек</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <a class="github-link" href="https://github.com/Alexsol83" target="_blank" rel="noopener">GitHub ↗</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="dot"></span> PERSONAL TECH LAB</div>
+        <h1>IT.<br><span>Automation.</span><br>HomeLab.</h1>
+        <p class="hero-text">
+          Личная страница Alexsol83 — проекты, эксперименты и полезные инструменты
+          вокруг Windows, сетей, OpenWrt, автоматизации и домашней инфраструктуры.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Смотреть проекты</a>
+          <a class="btn secondary" href="https://github.com/Alexsol83" target="_blank" rel="noopener">Открыть GitHub</a>
+        </div>
+      </div>
+
+      <div class="terminal-card reveal" aria-label="Терминал">
+        <div class="terminal-top">
+          <span></span><span></span><span></span>
+          <small>alexsol83@homelab:~</small>
+        </div>
+        <div class="terminal-body">
+          <p><b>$</b> whoami</p>
+          <p class="muted">alexsol83</p>
+          <p><b>$</b> cat focus.txt</p>
+          <p class="accent">automation · networking · homelab</p>
+          <p><b>$</b> systemctl status projects</p>
+          <p class="ok">● active — always building</p>
+          <p class="cursor">_</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats reveal" aria-label="Ключевые направления">
+      <div><strong>01</strong><span>Windows<br>Automation</span></div>
+      <div><strong>02</strong><span>OpenWrt<br>& Networking</span></div>
+      <div><strong>03</strong><span>HomeLab<br>& Media</span></div>
+      <div><strong>04</strong><span>Scripts<br>& Tools</span></div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="section-label">01 / ABOUT</div>
+      <div class="section-content">
+        <h2>Собираю вещи,<br>которые <em>работают.</em></h2>
+        <p>
+          Мне интересны практичные технологии: автоматизация рутинных действий,
+          домашние серверы, сети, Windows-инструменты и всё, что позволяет
+          сделать систему удобнее и надёжнее.
+        </p>
+        <p>
+          Эта страница — небольшая витрина проектов и место, куда постепенно
+          будут добавляться новые эксперименты.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="section-label">02 / PROJECTS</div>
+      <div class="project-grid">
+        <article class="project">
+          <div class="project-number">01</div>
+          <div class="project-icon">◈</div>
+          <h3>Steam Big Picture Automation</h3>
+          <p>Автоматическое переключение мониторов и аудиоустройства при запуске и выходе из Steam Big Picture.</p>
+          <div class="tags"><span>PowerShell</span><span>Windows</span><span>Automation</span></div>
+        </article>
+
+        <article class="project">
+          <div class="project-number">02</div>
+          <div class="project-icon">⌁</div>
+          <h3>OpenWrt Home Media</h3>
+          <p>Netis NX32U как домашний сетевой узел: HDD, DLNA, Transmission и медиатека.</p>
+          <div class="tags"><span>OpenWrt</span><span>Linux</span><span>DLNA</span></div>
+        </article>
+
+        <article class="project">
+          <div class="project-number">03</div>
+          <div class="project-icon">▣</div>
+          <h3>Windows Utility Scripts</h3>
+          <p>Небольшие скрипты и автоматизация для повседневных задач: запуск, устройства, мониторы и звук.</p>
+          <div class="tags"><span>PowerShell</span><span>VBS</span><span>Windows</span></div>
+        </article>
+
+        <article class="project future">
+          <div class="project-number">04</div>
+          <div class="project-icon">+</div>
+          <h3>Следующий проект</h3>
+          <p>Здесь появится новый проект. Сайт специально сделан так, чтобы добавлять карточки было просто.</p>
+          <div class="tags"><span>Coming soon</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack" class="section reveal">
+      <div class="section-label">03 / TOOLBOX</div>
+      <div class="toolbox">
+        <div><b>Windows</b><span>PowerShell · VBS · Registry</span></div>
+        <div><b>Networking</b><span>OpenWrt · TCP/IP · Wi‑Fi · VPN</span></div>
+        <div><b>HomeLab</b><span>Storage · DLNA · Torrents · Media</span></div>
+        <div><b>Web</b><span>HTML · CSS · JavaScript · GitHub Pages</span></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact reveal">
+      <div>
+        <div class="section-label">04 / CONTACT</div>
+        <h2>Есть идея?<br><em>Давай соберём.</em></h2>
+      </div>
+      <a class="btn primary large" href="https://github.com/Alexsol83" target="_blank" rel="noopener">GitHub profile ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Alexsol83</span>
+    <span>Built with HTML · CSS · JS</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
